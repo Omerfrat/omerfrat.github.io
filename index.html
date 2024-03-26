@@ -1,15 +1,91 @@
-<!DOCTYPE html> <!-- html oldugunu bildiriyoruz-->
-<html lang="tr"> <!--hangi dili kullanacagını belirliyor-->
-<head> <!--arka plan çalışan kodlar-->
-  <meta charset="UTF-8"> <!-- harf karakteri-->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
+  <title>Ömer Fırat</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url("/assets/img/tem.jpg");
+      height: 100vh; /* Ekran yüksekliğinin tamamını kaplayacak şekilde ayarlanır */
+      margin: 20; /* Sayfanın kenar boşluklarını kaldırır */
+    }
+    h1 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    h1 a {
+      margin: 0 10px; /* Bağlantılar arasındaki boşluk */
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center; /* İçeriği dikeyde ortalar */
+    }
+    table {
+      margin-right: 20px; /* İstenilen boşluk için */
+    }
+    table, th, td {
+      border: 1px solid #f2f2f2;
+      border-radius: 10px;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    img {
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <hr>
-  <p>Merhaba ben Ömer Fırat 26 yaşındayım. 8 yıldır hobi olarak Siber güvenlik ile ilgileniyorum. Yazılıma başladım ve bugün 2. günüm başarılarımın devamını diliyorum. Yeni version</p>
-  
-  <hr>
+
+  <h1>
+    <a href="/index.html">Ana Sayfa</a>
+    <a href="/hakkimda.html">Hakkımda</a>
+    <a href="/proje.html">Projelerim</a>
+    <a href="/iletisim.html">İletişim</a>
+  </h1>
+
+  <div class="content">
+    <table>
+      <tr>
+        <th colspan="2">
+          <a href="/hakkimda.html">Benim Hakkımda</a>
+        </th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h5>Genç yaşına rağmen yazılım dünyasında adını duyurmaya başlayan 26 yaşındaki Ömer Fırat, kariyerine sağlam adımlarla ilerliyor. Acunmedya Akademisi'nde yazılım geliştirme dersleri alırken, yetenekleri ve tutkusuyla dikkat çekiyor.</h5>
+          <h5>Ömer, yazılıma olan ilgisini küçük yaşlardan itibaren keşfetti. Bilgisayarlarla tanıştığı ilk günden itibaren kod yazmaya merak sardı ve bu merakıyla kendini sürekli geliştirdi. Lise yıllarında başladığı yazılım projeleriyle çevresindekilerin dikkatini çekti ve gelecekteki potansiyelini göstermeye başladı.</h5>
+          <h5>Üniversite eğitimi sırasında yazılım geliştirme alanında kendini daha da ileri taşımak için çeşitli kurslara katıldı ve bu alandaki bilgisini derinleştirdi. Ardından, sektörde deneyim kazanmak adına Acunmedya Akademisi'nde yazılım geliştirme derslerine başladı. Burada hem teorik bilgisini pekiştiriyor hem de gerçek dünya projelerinde yer alarak pratik deneyim kazanıyor.</h5>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">Detay</th>
+      </tr>
+      <tr>
+        <td>Ad:</td>
+        <td>Ömer Fırat</td>
+      </tr>
+      <tr>
+        <td>Yaş:</td>
+        <td>26 yaş</td>
+      </tr>
+      <tr>
+        <td>Konum:</td>
+        <td>Acunmedya Akademisi, Türkiye</td>
+      </tr>
+    </table>
+
+    <img src="/assets/img/ben.jpg" width="325">
+  </div>
 
 </body>
 </html>
